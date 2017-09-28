@@ -10,3 +10,17 @@ When it is not obvious how to apply a change, the following happens:
 3. Paths in which the change applied cleanly are updated both in the index file and in your working tree.
 4. For conflicting paths, the index file records up to three versions, as described in the "TRUE MERGE" section of git-merge[1]. The working tree files will include a description of the conflict bracketed by the usual conflict markers <<<<<<< and >>>>>>>.
 5. No other modifications are made.
+
+Actually, part or all of the SHA for the commit could be used as a parameter for the command.
+
+---------------------------------------
+Actual steps, that have been taken:
+
+1.  git fetch
+	git checkout <remote branch>
+
+2.  git cherry-pick <older-commit-sha> ... <newer-commit-sha>
+or  git cherry-pick <one-particular-commit-sha>
+
+3.  git push origin <remote branch>
+---------------------------------------
