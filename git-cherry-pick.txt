@@ -1,2 +1,0 @@
-git cherry-pick command takes a commit from somewhere else, and "play it back" wherever you are right now.
-Here is an article that explains basic idea behind it: http://think-like-a-git.net/sections/rebase-from-the-ground-up/cherry-picking-explained.html
